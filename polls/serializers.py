@@ -1,8 +1,10 @@
 from rest_framework import serializers
-from .models import Year
 
 
-class YearSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Year
-        fields = '__all__'
+class YearSerializer(serializers.Serializer):
+    value = serializers.IntegerField()
+
+
+class RangeYearSerializer(serializers.Serializer):
+    first_year = serializers.IntegerField()
+    second_year = serializers.IntegerField()
