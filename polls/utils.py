@@ -1,8 +1,9 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 def get_utc_timestamp():
     local = datetime.now()
-    return local.strftime("%Y/%m/%d, %H:%M:%S")
+    new_local = local + timedelta(hours=1)
+    return new_local.strftime("%Y/%m/%d, %H:%M:%S")
 
 

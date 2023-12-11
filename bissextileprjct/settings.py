@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'bissextileprjct.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bissextile_db',
+        'NAME': 'bisextile_db',
         'USER': 'kosc',
         'PASSWORD': 'kosc',
         'HOST': 'localhost',
